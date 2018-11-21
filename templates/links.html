@@ -1,0 +1,8 @@
+<html>
+	<body>
+		<h1> Dude, here are your links:  </h1>
+		{% for i in info %}
+			<li> <a href = {{ url + i['title'].replace(" ", "_") }} > {{i['title']}} </li>
+		{% endfor %}
+	</body>
+</html>
